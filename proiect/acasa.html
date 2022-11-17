@@ -1,25 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="ro">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Acasa </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header>
-        <div><img src="" alt=""></div>
-        <nav>
-            <ul>
-                <li><a href="acasa.html">Acasa</a></li>
-                <li><a href="">Despre noi</a> </li>
-                <li><a href="">Portofoliu</a> </li>
-                <li><a href="">Blog</a> </li>
-                <li><a href="">Contact</a> </li>
-            </ul>
-        </nav>
-    </header>
-    
-</body>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML CSS Proiect 2022 - 2023</title>
+    <meta name="description" content="Proiect demo de la cursul de HTML CSS " />
+    <meta name="keywords" content="website, site, CSS, HTML, proeict" />
+    <meta name="author" content="LinkAcademy">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel='icon' type='image/x-icon' href='./assets/images/favicon.ico'/>
+    <!-- CSS  -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="acasa.html">Coffe<span class="logo_colour">Shop</span></a></h1>
+          <h2>Primul meu proeict.</h2>
+        </div>
+      </div>
+      <nav id="menubar">
+        <ul id="menu">
+          <li class="selected"><a href="acasa.html">Acasa</a></li>
+          <li><a href="">Despre noi</a></li>
+          <li><a href="">Portofoliu</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main">
+      <div id="content_header"></div>
+      <div id="site_content">
+        <div id="banner"></div>
+        <div id="content">
+          <h1>Continut stanga</h1>
+        </div>
+        <div id="sidebar_container">
+          <div class="sidebar">
+              <h3>Continut sidebar dreapta</h3>
+          </div>
+          <div class="sidebar">
+              <h3>Link-uri</h3>
+              <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+              </ul>
+          </div>
+          <div class="sidebar">
+              <h3>Cauta</h3>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>
+      <p>Copyright &copy; Nume Prenume | <a href="">HTML5</a> | <a href="">CSS</a> </p>
+    </div>
+  </body>
 </html>
