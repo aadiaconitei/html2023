@@ -1,0 +1,28 @@
+
+#p1,#p2{
+    color: red;
+}
+
+p{
+    color: green;
+}
+
+.pfont{
+    font-size: 35px;
+    color: coral;
+}
+.pblue{
+    color: blue;
+}
+
+
+/*  */
+
+div p{
+    color: chocolate;
+}
+.iddiv .pdiv{
+}
+.iddiv > .pdiv{
+    color: aquamarine;
+}
