@@ -226,6 +226,10 @@ ul#menu li a:hover
 }
 
 /* MAIN */
+  #main {
+    width: 100%;
+    max-width: 1000px;
+  }
 #site_content{ 
   width: 100%;
   max-width: 1000px;
@@ -260,7 +264,21 @@ ul#menu li a:hover
     max-width: 220px;
     border: 1px red dotted;
   }
-  
+
+  .row{
+    width: 100%;
+    margin: 20px auto;
+
+  }
+  .col-4{
+    width: 30%;
+    float: left;
+    padding: 0 10px;
+  }
+  .col-4>img {
+    width: 100%;
+    max-height: 140px;
+  }
   
   .sidebar { 
     float: right;
