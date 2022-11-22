@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table#tbl_2 {
+            border-collapse: collapse;
+            margin-bottom: 3em;
+            background: #fff;
+        }
+        table#tbl_2 td, table#tbl_2 th {
+            padding: 0.75em 1.5em;
+            text-align: left;
+        }
+
+        table#tbl_2 th {
+            background-color: #31bc86;
+            font-weight: bold;
+            color: #fff;
+            white-space: nowrap;
+        }
+        table#tbl_2 tbody th {
+        	background-color: #2ea879;
+        }
+        table#tbl_2 tbody tr:nth-child(2n-1) {
+            background-color: #f5f5f5;
+            transition: all .125s ease-in-out;
+        }
+        table#tbl_2 tbody tr:hover {
+            background-color: rgba(129,208,177,.3);
+        }
+
+        @media (max-width: 800px) {
+            #tbl_2 td:nth-child(3),
+            #tbl_2 th:nth-child(3) { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <table id="tbl_2">
+    	<thead>
+    		<tr>
+    			<th>Nume</th>
+    			<th>Email</th>
+    			<th>Telefon fix</th>
+    			<th>Telefon mobil</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+                <td class="user-name">test test</td>
+                <td class="user-email">test.test@example.com</td>
+                <td class="user-phone">12345</td>
+                <td class="user-mobile">0744444</td>
+            </tr>
+    		<tr><td class="user-name">test1 test1</td>
+                <td class="user-email">test1.test1@example.com</td>
+                <td class="user-phone">12345</td><td class="user-mobile">0744444</td>
+            </tr>
+    		<tr><td class="user-name">test2 test2</td>
+                <td class="user-email">test2.test2@example.com</td>
+                <td class="user-phone">12345</td><td class="user-mobile">0744444</td>
+            </tr>
+    		<tr><td class="user-name">test3 test3</td>
+                <td class="user-email">test3.test3@example.com</td>
+                <td class="user-phone">12345</td><td class="user-mobile">0744444</td>
+            </tr>
+    	</tbody>
+    </table>
+
+</body>
+</html>

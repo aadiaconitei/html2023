@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table#tbl_3 {
+            border-collapse: collapse;
+            margin-bottom: 3em;
+            width: 100%;
+            background: #cdcdcd;
+
+        }
+
+        table#tbl_3  tr td {
+            padding: 0.75em 1.5em;
+            text-align: center;
+            border: solid 2px #284554;
+        }
+        table#tbl_3 thead tr{
+        border: solid 2px #FF5972;
+        }
+        table#tbl_3  tfoot tr td{
+           text-align: left;
+           font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table id="tbl_3">
+          <thead>
+            <tr>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
+            </tr>
+          </thead>
+             <tbody>
+               <tr>
+                 <td rowspan="6">rowspan="6"</td>
+               </tr>
+               <tr>
+                 <td colspan="3">colspan="3"</td>
+               </tr>
+               <tr>
+                 <td colspan="2">colspan="2"</td>
+                 <td rowspan="4">rowspan="4"</td>
+               </tr>
+               <tr>
+                 <td rowspan="3">rowspan="3"</td>
+               </tr>
+               <tr>
+                 <td>celula simpla</td>
+               </tr>
+               <tr>
+                 <td>celula simpla 2</td>
+              </tr>
+          </tbody>
+        <tfoot>
+            <tr>
+              <td colspan="3">Total</td>
+        	   <td>100</td>
+            </tr>    
+      </tfoot>
+    </table>
+
+</body>
+</html>
