@@ -1,46 +1,102 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML CSS Proiect 2022 - 2023</title>
-    <meta name="description" content="Proiect demo de la cursul de HTML CSS " />
-    <meta name="keywords" content="website, site, CSS, HTML, proeict" />
-    <meta name="author" content="LinkAcademy">
-    <!-- Favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
-    <link rel='icon' type='image/x-icon' href='./assets/images/favicon.ico'/>
-    <!-- CSS  -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
 
-  <body>
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <h1><a href="acasa.html">Coffe<span class="logo_colour">Shop</span></a></h1>
-          <h2>Primul meu proeict.</h2>
-        </div>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML CSS Proiect 2022 - 2023</title>
+  <meta name="description" content="Proiect demo de la cursul de HTML CSS " />
+  <meta name="keywords" content="website, site, CSS, HTML, proeict" />
+  <meta name="author" content="LinkAcademy">
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel='icon' type='image/x-icon' href='./assets/images/favicon.ico' />
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo">
+      <div id="logo_text">
+        <h1><a href="acasa.html">Coffe<span class="logo_colour">Shop</span></a></h1>
+        <h2>Primul meu proeict.</h2>
       </div>
-      <nav id="menubar">
-        <ul id="menu">
-          <li><a href="acasa.html">Acasa</a></li>
-          <li><a href="">Despre noi</a></li>
-          <li><a href="portofoliu.html">Portofoliu</a></li>
-          <li  class="selected"><a href="blog.html">Blog</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
     </div>
-    <div id="main">
+    <nav id="menubar">
+      <!-- Hamburger icon -->
+      <a href="#" class="logo">CS</a>
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-        aici va fi un tabel
-    </div>
-    <footer id="footer">
-      <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>
-      <p>Copyright &copy; Nume Prenume | <a href="">HTML5</a> | <a href="">CSS</a> </p>
-    </footer>
-  </body>
+      <ul id="menu">
+        <li><a href="acasa.html">Acasa</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="portofoliu.html">Portofoliu</a></li>
+        <li class="selected"><a href="blog.html">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="main">
+    <article>
+      <h2>Articol 1</h2>
+      <p>BRAZILIA COSTA ALBERTINA 500G - CAFEA DE SPECIALITATE ORIGINE:</p>
+     <img src="./assets/images/1.jpeg" alt="example graphic" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum.
+      </p>
+    </article>
+    <article>
+      <h2>Articol 2</h2>
+      <p>CAFEA DE SPECIALITATE:</p>
+     <img src="./assets/images/2.jpeg" alt="example graphic" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum.
+      </p>
+    </article>
+    <article>
+      <h2>Articol 3</h2>
+      <p>RITUAL BY DROPSHOT AROMATIC BLEND 1KG - CAFEA DE SPECIALITATE:</p>
+     <img src="./assets/images/4.jpeg" alt="example graphic" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum.
+      </p>
+    </article>
+  </div>
+  <footer id="footer">
+    <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>
+    <p>Copyright &copy; Nume Prenume | <a href="">HTML5</a> | <a href="">CSS</a> </p>
+  </footer>
+</body>
+
 </html>

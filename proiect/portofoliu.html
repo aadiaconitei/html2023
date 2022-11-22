@@ -1,45 +1,114 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Portofoliu HTML CSS Proiect 2022 - 2023</title>
-    <meta name="description" content="Proiect demo de la cursul de HTML CSS " />
-    <meta name="keywords" content="website, site, CSS, HTML, proeict" />
-    <meta name="author" content="LinkAcademy">
-    <!-- Favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
-    <link rel='icon' type='image/x-icon' href='./assets/images/favicon.ico'/>
-    <!-- CSS  -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Portofoliu HTML CSS Proiect 2022 - 2023</title>
+  <meta name="description" content="Proiect demo de la cursul de HTML CSS " />
+  <meta name="keywords" content="website, site, CSS, HTML, proeict" />
+  <meta name="author" content="LinkAcademy">
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel='icon' type='image/x-icon' href='./assets/images/favicon.ico' />
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
 <body>
-    <div id="header">
-        <div id="logo">
-          <div id="logo_text">
-            <h1><a href="acasa.html">Coffe<span class="logo_colour">Shop</span></a></h1>
-            <h2>Primul meu proeict.</h2>
-          </div>
-        </div>
-        <nav id="menubar">
-          <ul id="menu">
-            <li ><a href="acasa.html">Acasa</a></li>
-            <li><a href="">Despre noi</a></li>
-            <li class="selected" ><a href="portofoliu.html">Portofoliu</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
+  <div id="header">
+    <div id="logo">
+      <div id="logo_text">
+        <h1><a href="acasa.html">Coffe<span class="logo_colour">Shop</span></a></h1>
+        <h2>Primul meu proeict.</h2>
+      </div>
     </div>
-    <div id="main">
-        aici ve fi afisat portofoliu
-    </div>
-    <footer id="footer">
-        <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>
-        <p>Copyright &copy; Nume Prenume | <a href="">HTML5</a> | <a href="">CSS</a> </p>
-    </footer>
+    <nav id="menubar">
+       <!-- Hamburger icon -->
+       <a href="#" class="logo">CS</a>
+       <input class="side-menu" type="checkbox" id="side-menu"/>
+       <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+      <ul id="menu">
+        <li><a href="acasa.html">Acasa</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li class="selected"><a href="portofoliu.html">Portofoliu</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="main">
+    <h2>Tabele</h2>
+    <p>Tabelele le vom folosi pentru a afisa informatia nu pentru a face structura unei pagini:</p>
+    <h3>Tabel 1</h3>
+    <table id="tb_1">
+      <tr>
+        <th>Item</th>
+        <th>Descriere</th>
+      </tr>
+      <tr>
+        <td>Item 1</td>
+        <td>Descriere Item 1</td>
+      </tr>
+      <tr>
+        <td>Item 2</td>
+        <td>Descriere Item 2</td>
+      </tr>
+      <tr>
+        <td>Item 3</td>
+        <td>Descriere Item 3</td>
+      </tr>
+      <tr>
+        <td>Item 4</td>
+        <td>Descriere Item 4</td>
+      </tr>
+    </table>
+    <h3>Tabel 2</h3>
+    <table id="tbl_2">
+      <thead>
+        <tr>
+          <th>Nume</th>
+          <th>Email</th>
+          <th>Telefon fix</th>
+          <th>Telefon mobil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="user-name">test test</td>
+          <td class="user-email">test.test@example.com</td>
+          <td class="user-phone">12345</td>
+          <td class="user-mobile">0744444</td>
+        </tr>
+        <tr>
+          <td class="user-name">test1 test1</td>
+          <td class="user-email">test1.test1@example.com</td>
+          <td class="user-phone">12345</td>
+          <td class="user-mobile">0744444</td>
+        </tr>
+        <tr>
+          <td class="user-name">test2 test2</td>
+          <td class="user-email">test2.test2@example.com</td>
+          <td class="user-phone">12345</td>
+          <td class="user-mobile">0744444</td>
+        </tr>
+        <tr>
+          <td class="user-name">test3 test3</td>
+          <td class="user-email">test3.test3@example.com</td>
+          <td class="user-phone">12345</td>
+          <td class="user-mobile">0744444</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer id="footer">
+    <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>
+    <p>Copyright &copy; Nume Prenume | <a href="">HTML5</a> | <a href="">CSS</a> </p>
+  </footer>
 
 </body>
+
 </html>
