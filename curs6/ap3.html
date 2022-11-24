@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formular cu select</h1>
+    <form action="http://localhost/demo/test/test.php">
+        <label for="oras">Selecteaza orasul de resedinta</label>
+        <select name="oras" id="oras" required>
+            <option value="">Selecteaza...</option>
+            <option value="Bucuresti">Bucuresti</option>
+            <option value="Cluj"> Cluj</option>
+            <option value="Iasi">Iasi</option>
+            <option value="Arad" selected>Arad</option>
+            <option value="Brasov">Brasov</option>
+        </select>
+        <label for="eveniment">Selecteaza orasul eveniment</label>
+        <select name="eveniment[]" id="eveniment" required="required" multiple="multiple">
+            <option value="">Selecteaza...</option>
+            <option value="Bucuresti">Bucuresti</option>
+            <option value="Cluj"> Cluj</option>
+            <option value="Iasi">Iasi</option>
+            <option value="Arad" selected>Arad</option>
+            <option value="Brasov">Brasov</option>
+        </select>
+        <br>
+        <label for="mesaj"> Mesaj</label>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="10" >Demo fgdfg dfg dfg dg dg
+        </textarea>
+
+        <input type="submit" value="Trimite datele">
+    </form>
+
+</body>
+</html>

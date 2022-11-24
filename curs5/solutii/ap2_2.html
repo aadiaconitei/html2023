@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+	/* Smartphones (portrait and landscape) ----------- */
+		@media (max-width : 640px) {
+			.mob{
+				display: block;
+				background-image: url("mob.png");
+			}
+			div:not(.mob){
+				display: none;
+			}
+		}
+
+
+		/* iPads (portrait and landscape) ----------- */
+		@media (min-width : 641px) and (max-width : 768px) {
+		  	.tab{
+				display: block;
+				background-image: url("tab.png");
+			}
+			div:not(.tab){
+				display: none;
+			}
+			
+		}
+
+		/* Desktops and laptops ----------- */
+		@media (min-width : 769px) and (max-width : 1223px){
+		 .lap{
+				display: block;
+				background-image: url("laptop.png");
+			}
+			div:not(.lap){
+				display: none;
+			}
+		}
+
+		/* Large screens ----------- */
+		@media (min-width : 1224px) {
+		  .des{
+				display: block;
+				background-image: url("design.jpg");
+			}
+			div:not(.des){
+				display: none;
+			}
+		}
+	
+	
+	
+	</style>
+</head>
+
+<body>
+	
+	<div class="des">
+		<h1>Suntem de desktop</h1>
+		
+	</div>
+	<div class="lap">
+		<h1>Suntem de laptop</h1>
+		
+	</div>
+	<div class="tab">
+		<h1>Suntem de tableta</h1>
+		
+	</div>
+	
+	<div class="mob">
+		<h1>Suntem de mobil</h1>
+		
+	</div>
+	
+</body>
+</html>
+	

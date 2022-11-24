@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10</title>
+    <link rel="stylesheet" href="css/10.css">
+</head>
+<body>
+    <h1>Comanda</h1>
+      <form class="comanda" oninput="x.value=parseInt(a.value)+parseInt(b.value)" method="post">
+        <fieldset>
+          <legend>Card</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="required">Numar card:</label>
+              </td>
+              <td>
+                <input type="text" name="numar card" placeholder="Introduceti numarul cardului" size="34" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="required">Data expirare:</label>
+              </td>
+              <td>
+                <input type="date" name="data expirare" placeholder="Introduceti data de expirare" size="34" required/>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Livrare</legend>
+          <table>
+            <tr>
+              <td>
+                <label class="required">Prenume:</label>
+              </td>
+              <td>
+                <input type="text" name="prenume" placeholder="Introduceti prenumele" size="40" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="required">Nume:</label>
+              </td>
+              <td>
+                <input type="text" name="nume" placeholder="Introduceti numele" size="40" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="required">Companie:</label>
+              </td>
+              <td>
+                <input type="text" name="companie" placeholder="Introduceti numele companiei" size="40" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="required">Adresa:</label>
+              </td>
+              <td>
+                <input type="text" name="adresa" placeholder="Introduceti strada si numarul" size="40" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="required">Oras:</label>
+              </td>
+              <td>
+                <input type="text" name="oras" placeholder="Introduceti orasul" size="40" required/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Email:</label>
+              </td>
+              <td>
+                <input type="email" name="email" placeholder="Introduceti adresa de email" size="40" required//>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="required">Telefon:</label>
+              </td>
+              <td>
+                <input type="tel" name="telefon" placeholder="Introduceti numarul de mobil" size="40" required/>
+              </td>
+            </tr>
+
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Adauga produsele</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label class="required">Masina:</label>
+                    </td>
+                    <td>
+                        <select name="masina" required/>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                    <label class="required">Mesaj:</label>
+                </td>
+                <td>
+                    <textarea name="message" rows="10" cols="30" required/>Doresc masina noua</textarea>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <label class="required">Pret optionale:</label>
+                </td>
+                <td>
+                <input type="number" id="a" name="a" value="150">
+                <input type="number" id="b" name="b" value="50">=<output name="x" for="a b"></output>
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="required">An fabricatie:</label>
+                </td>
+                <td>
+                  <input type="radio" name="an" value="2010" checked> 2010<br>
+                  <input type="radio" name="an" value="2014"> 2014<br>
+                  <input type="radio" name="an" value="2018"> 2018<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="required">Dotari</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="aer" value="1"> Clima<br>
+                    <input type="checkbox" name="gelectric" value="1"> Geamuri electrice<br>
+                    <input type="checkbox" name="pilot" value="1"> Pilot automat
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="required">Culoare:</label>
+                </td>
+                <td>
+                   <input type="color" name="culoares" required/>
+                </td>
+              </tr>
+            </table>
+        </fieldset>
+        <p>
+          <button type="reset">Anulare</button>
+          <button type="submit">Plata</button>
+        </p>
+
+      </form>
+</body>
+</html>

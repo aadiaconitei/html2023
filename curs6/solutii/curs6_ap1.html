@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formular de cautare</title>
+    <style type="text/css">
+        #cautare > input {
+            padding: 3px;
+            border: solid 1px blue;
+        }
+        input[type=submit] {
+            padding:10px 25px;
+            background:#284554;
+            color: #fff;
+            font-weight: bold;
+            cursor:pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Formular de cautare</h2>
+    <form id="cautare" action="http://localhost/mysite/cautare.php" method="post">
+		<input type="text" name="cuvant" value="">
+		<input type="submit" value="Cauta" >
+	</form>
+</body>
+</html>

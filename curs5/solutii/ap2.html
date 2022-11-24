@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+	/* Smartphones (portrait and landscape) ----------- */
+		@media (max-width : 640px) {
+			.mob{
+				display: block;
+			}
+			div:not(.mob){
+				display: none;
+			}
+		}
+		/* iPads (portrait and landscape) ----------- */
+		@media (min-width : 641px) and (max-width : 768px) {
+		  	.tab{
+				display: block;
+			}
+			div:not(.tab){
+				display: none;
+			}
+			
+		}
+
+		/* Desktops and laptops ----------- */
+		@media (min-width : 769px) and (max-width : 1223px){
+		 .lap{
+				display: block;
+			}
+			div:not(.lap){
+				display: none;
+			}
+		}
+
+		/* Large screens ----------- */
+		@media (min-width : 1224px) {
+		  .des{
+				display: block;
+			}
+			div:not(.des){
+				display: none;
+			}
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div class="des">
+		<h1>Suntem de desktop</h1>
+		<img  src="design.jpg" width="100%" alt=""/>
+	</div>
+	<div class="lap">
+		<h1>Suntem de laptop</h1>
+		<img  src="laptop.png" width="100%" alt=""/>
+	</div>
+	<div class="tab">
+		<h1>Suntem de tableta</h1>
+		<img  src="tab.jpg" width="100%" alt=""/>
+	</div>
+	
+	<div class="mob">
+		<h1>Suntem de mobil</h1>
+		<img src="mob.png" width="100%" alt=""/>
+	</div>
+	
+</body>
+</html>
+	

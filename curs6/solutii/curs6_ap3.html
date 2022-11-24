@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formular contact</title>
+</head>
+	<body>
+		<h2>Formular contact</h2>
+		<form id="inregistrare" action="http://localhost/mysite/contact.php" method="post" enctype="multipart/form-data">
+			<label for="oras">Orasul</label>
+			<select class="form-control" id="oras" name="oras">
+				<option value="">Selecteaza</option>
+				<option value="Bucuresti">Bucuresti</option>
+				<option value="Cluj">Cluj</option>
+				<option value="Iasi">Iasi</option>
+				<option value="Timisoara">Timisoara</option>
+			</select>
+			<br />
+			<label for="cursuri">Cursuri la care doriti sa  va inscieti</label>
+			<select multiple class="form-control" id="cursuri" name="cursuri">
+			  <option value="PHP">PHP</option>
+			  <option value="HTML">HTML</option>
+			  <option value="JAVA">JAVA</option>
+			  <option value="Photoshop">Photoshop</option>
+			  <option value="CSS">CSS</option>
+			</select>
+			<br />
+			<label for="mesaj">Mesaj</label>
+			<textarea class="form-control" id="mesaj" name="mesaj" rows="10" cols="30"></textarea>
+			<br />
+			<label for="cv">CV</label>
+			<input type="file" class="form-control-file" id="cv" name="cv">
+			<br />
+			<fieldset class="form-group">
+				<legend>Program cursuri</legend>
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="dimineata" checked>
+					dimineata
+				</label>
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="la pranz" disabled>
+					la pranz
+				</label>
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="seara">
+					seara
+				</label>
+			</fieldset>
+			<br />
+			<label class="form-check-label">
+			  <input type="checkbox" class="form-check-input" name="termeni" checked>
+			  Termeni si conditii
+			</label>
+			<label class="form-check-label">
+			  <input type="checkbox" class="form-check-input" name="newsletter">
+			  Va abonati la newsletter
+			</label>
+			<br />
+			<button type="submit" class="btn btn-primary">Trimite datele</button>
+		</form>
+	</body>
+</html>

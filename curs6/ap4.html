@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Formular de contact</h1>
+
+        <form action="http://localhost/demo/test/test.php" method="post"  enctype="multipart/form-data">
+            <label for="oras">Selecteaza orasul dorit</label>
+            <select name="oras" id="oras">
+                <option value="">Selecteaza...</option>
+                <option value="1">Bucuresti</option>
+                <option value="2">Cluj</option>
+                <option value="3">Iasi</option>
+                <option value="4">Arad</option>
+            </select><br>
+            <label for="cursuri"> Cursurile dorite</label>
+            <select name="cursuri[]" id="cursuri" multiple>
+                <option value="php">PHP</option>
+                <option value="js">JavaScript</option>
+                <option value="vue">VueJs</option>
+            </select> <br>
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea> <br>
+            <label for="cv">CV</label>
+            <input type="file" name="document" id="cv"> <br>
+            <fieldset>
+                <figcaption>Progrma cursuri</figcaption>
+                <input type="radio" name="timp" id="dimineata" value="dimineata"> dimineata
+                <input type="radio" name="timp" id="pranz" value="pranz">pranz
+                <input type="radio" name="timp" id="seara" value="seara">seara
+            </fieldset>
+            <br>
+            <input type="checkbox" name="termeni" id="" checked> Termeni
+            <input type="checkbox" name="abonat" id=""> Abonat <br>
+            <input type="date" name="" id="">
+
+            <input type="submit" value="Trimite">
+
+        </form>
+    </div>
+</body>
+</html>

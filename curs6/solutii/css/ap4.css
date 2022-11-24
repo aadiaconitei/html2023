@@ -1,0 +1,28 @@
+.required::after {
+  content: " *";
+  color: red;
+}
+form.comanda {
+  width: 380px;
+  padding: 10px;
+}
+.comenzi table {
+  width: 300px;
+  margin: auto;
+}
+.comenzi table tr > td {
+  width: 25%;
+}
+.comenzi table td, .comenzi table th {
+  padding: 4px;
+}
+
+.comenzi table tr td, .comenzi table tr th {
+  border: 1px solid  #034500;
+}
+.comenzi table tfoot tr:last-child td:last-child {
+  border: 1px solid transparent;
+}
+.comenzi table {
+  border-collapse: collapse;
+}
