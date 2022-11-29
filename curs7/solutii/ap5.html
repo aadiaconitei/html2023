@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ap5 Curs 7</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #repeat-y {
+            background-repeat: repeat-y;
+        }
+
+        #repeat-x {
+            background-repeat: repeat-x;
+        }
+
+        #no-repeat {
+            background-repeat: no-repeat;
+        }
+
+        div {
+            width: 400px;
+            height: 125px;
+            border: 5px solid #2834e1;
+            margin-bottom: 2em;
+            background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png);
+        }
+
+        #round {
+            width: 50vw;
+            height: 50vh;
+            background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-690/star.svg);
+            background-size: 20px;
+            background-repeat: round;
+            overflow: hidden;
+            resize: both;
+            position: relative;
+            min-width: 150px;
+            min-height: 60px;
+            display: grid;
+            place-items: center;
+
+        }
+
+        #round::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            background: white;
+        }
+
+        #round span {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemple de fundal</h1>
+    <h2>background-repeat: repeat; </h2>
+    <div id="repeat">
+    </div>
+
+    <h2>background-repeat: repeat-x;</h2>
+    <div id="repeat-x">
+    </div>
+
+    <h2>background-repeat: repeat-y;</h2>
+    <div id="repeat-y">
+    </div>
+
+    <h2>background-repeat: no-repeat;</h2>
+    <div id="no-repeat">
+    </div>
+
+    <h2>background-repeat: round;</h2>
+    <section id="round">
+        <span>Resize me.</span>
+    </section>
+
+</body>
+
+</html>
