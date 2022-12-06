@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
@@ -47,54 +47,73 @@
     </div>
     <div id="main">
         <h1>Formular de contact</h1>
-        <form action="" method="post">
+        <form class="form-register" action="" method="post">
             <fieldset>
                 <legend>Card</legend>
-                <label for="card">Numar Card:</label>
-                <input type="number" name="card" id="card" maxlength="16" required> <br>
-                <label for="data">Data expirare</label>
-                <input type="date" name="data" id="data" required>
+                <div class="form-row">
+                    <label for="card">Numar Card:</label>
+                    <input type="number" name="card" id="card" maxlength="16" required> <br>
+
+                </div>
+                <div class="form-row">
+                    <label for="data">Data expirare</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Livrare</legend>
-                <label for="prenume"> Preume</label>
-                <input type="text" name="prenume" id="prenume" placeholder="Introduceti Prenume"> <br>
-                <label for="nume"> Nume</label>
-                <input type="text" name="nume" id="nume" placeholder="Introduceti Numele">
-
+                <div class="form-row">
+                    <label for="prenume"> Preume</label>
+                    <input type="text" name="prenume" id="prenume" placeholder="Introduceti Prenume"> <br>
+                </div>
+                <div class="form-row">
+                    <label for="nume"> Nume</label>
+                    <input type="text" name="nume" id="nume" placeholder="Introduceti Numele">
+                </div>
 
             </fieldset>
             <fieldset>
                 <legend>Adauga produsele</legend>
+                <div class="form-row">
+                    <label for="masini">Masina: </label>
 
-                <label for="masini">Masina: </label>
-                <select name="masini" id="masini">
-                    <option value="volvo">Volvo</option>
-                    <option value="opel">Opel</option>
-                    <option value="dacia">Dacia</option>
-                </select> <br>
-                <label for="mesaj"> Mesaj</label>
-                <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea> <br>
-                <label for="optionale"> Optionale</label>
-                <input type="checkbox" name="senzori" id=""> Senzori
-                <input type="checkbox" name="camera" id=""> Camera
-                <br>
-                <label for="culoare"> Culoare</label>
-                <input type="radio" name="culoare" id="nm"> Negru metalizat <br>
-                <input type="radio" name="culoare" id="r"> Rosie <br>
-                <input type="radio" name="culoare" id="a"> Alba <br>
-                <input type="radio" name="culoare" id="v"> Verde
+                    <select name="masini" id="masini">
+                        <option value="volvo">Volvo</option>
+                        <option value="opel">Opel</option>
+                        <option value="dacia">Dacia</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="mesaj"> Mesaj</label>
+                    <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea> <br>
+                </div>
+                <div class="form-row">
+                    <label for="optionale"> Optionale</label> <br>
+                    <input class="check" type="checkbox" name="senzori" id=""> Senzori
+                    <input class="check" type="checkbox" name="camera" id=""> Camera
+                </div>
+                <div class="form-row">
+                    <label for="culoare"> Culoare</label> <br>
+                    <input class="radio" type="radio" name="culoare" id="nm"> Negru metalizat <br>
+                    <input class="radio" type="radio" name="culoare" id="r"> Rosie <br>
+                    <input class="radio" type="radio" name="culoare" id="a"> Alba <br>
+                    <input class="radio" type="radio" name="culoare" id="v"> Verde
+                </div>
             </fieldset>
 
-            <input type="submit" value=" Trimite datele">
+            <input class="btn" type="submit" value=" Trimite datele">
 
         </form>
 
         <h1> Adresa noastra este:</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit earum corrupti recusandae magni dolorum fugit obcaecati asperiores, 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit earum corrupti recusandae
+            magni dolorum fugit obcaecati asperiores,
             minus reiciendis placeat tempora perferendis, a quaerat non nisi modi necessitatibus eius!</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.837970092496!2d26.0993881!3d44.4364858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff46e86936c1%3A0xa5ca8365e0ce3627!2sStrada%20Academiei%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1669739312083!5m2!1sro!2sro" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.837970092496!2d26.0993881!3d44.4364858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff46e86936c1%3A0xa5ca8365e0ce3627!2sStrada%20Academiei%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1669739312083!5m2!1sro!2sro"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <footer id="footer">
         <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>

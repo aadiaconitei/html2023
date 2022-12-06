@@ -1,0 +1,65 @@
+.form-register{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-register-with-email{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.form-register-with-email .form-white-background{
+    width: 570px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 60px 80px;
+    margin-bottom: 35px;
+}
+
+ .form-row{
+    text-align: left;
+    padding:15px;
+}
+label{
+    display: inline-block;
+    width: 150px;
+}
+
+ input, select, textarea{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 230px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+.radio, .check{
+    width: 40px;
+    box-shadow:none;
+    border:none;
+}
+fieldset{
+    margin:20px;
+}
+.btn{
+    background-color: blue;
+    color: #ffffff;
+}
+
+/*	face ca formularul sa fie afisat corect si pe mobil. */
+
+@media (max-width: 900px) {
+
+    .form-register{
+        margin: 20px auto;
+    }
+
+    
+
+}

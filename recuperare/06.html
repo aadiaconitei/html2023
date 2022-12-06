@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06</title>
+    <style type="text/css">
+    body {
+        counter-reset: titlu;
+    }
+        h1 {
+            counter-reset: subtitlu;
+            color: #0008ff;
+        }
+        h1::before {
+            counter-increment: titlu;
+            content:  counter(titlu) " ";
+        }
+        h3 {
+            color: #940000;
+        }
+        h3::before {
+            margin-left: 25px;
+            counter-increment: subtitlu;
+            content: counter(titlu) "." counter(subtitlu) " ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Titlul</h1>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h1>Titlul</h1>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h1>Titlul</h1>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h1>Titlul</h1>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+    <h3>Subtitlul</h3>
+</body>
+</html>

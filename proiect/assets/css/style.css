@@ -148,6 +148,7 @@ ol li {
 #footer {
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 /* HEADER */
@@ -330,7 +331,8 @@ ul#menu li a:hover {
 
 /* MAIN */
 #main {
-  width: 100%;
+  width: 96%;
+  padding: 15px;
   max-width: 1000px;
 }
 #site_content {
@@ -347,7 +349,7 @@ ul#menu li a:hover {
   max-width: 768px;
   padding: 0 0 0 5px;
   float: left;
-  border: 1px red dotted;
+  /* border: 1px red dotted; */
 }
 
 #content ul {
@@ -357,7 +359,7 @@ ul#menu li a:hover {
 #content ul li,
 .sidebar ul li {
   list-style-type: none;
-  background: url(bullet.png) no-repeat;
+  background: url(../images/bullet.png) no-repeat;
   margin: 0 0 0 0;
   padding: 0 0 4px 25px;
   line-height: 1.5em;
@@ -367,8 +369,9 @@ ul#menu li a:hover {
   float: right;
   width: 100%;
   max-width: 220px;
-  border: 1px red dotted;
+  /* border: 1px red dotted; */
 }
+
 
 .row {
   width: 100%;

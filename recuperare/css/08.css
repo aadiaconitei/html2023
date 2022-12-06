@@ -1,0 +1,39 @@
+#sectiune{
+    border: solid 5px rgba(0, 81, 173, 0.5);
+}
+#stanga{
+    border: solid 5px #3dad00;
+    margin: 25px;
+    width: 64%;
+    float: left;
+
+}
+.paragraf{
+    padding: 25px;
+    margin: 0;
+}
+#dreapta{
+    border: solid 5px #ad0028;
+    width: 30%;
+    float: left;
+    margin: 25px 0;
+    text-align: center;
+
+}
+figure{
+padding: 0;
+margin: 0px
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
